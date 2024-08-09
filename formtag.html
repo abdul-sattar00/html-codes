@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="">
+    <label for="username">Username:</label>
+    <!-- The <input> element is used to create an input field -->
+    <!-- Attributes: 
+        - type: Specifies the type of input (e.g., text, password, email, etc.).
+        - id: Unique identifier for the input element.
+        - name: Name of the input field, used when sending data.
+        - value: The default value of the input field.
+        - placeholder: Placeholder text shown when the input is empty.
+        - required: Indicates that the input field is required.
+        - minlength: Minimum length of the input value.
+        - maxlength: Maximum length of the input value.
+        - pattern: Regular expression to validate the input value.
+    -->
+    <input type="text" id="username" name="username" value="" placeholder="Enter your username" required minlength="5" maxlength="15" pattern="[A-Za-z0-9]{5,15}">
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required minlength="8">
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+    <br><br>
+
+    <label for="age">Age:</label>
+    <!-- The <input type="number"> element is used for input fields that should contain a numeric value -->
+    <!-- Additional attributes: 
+        - min: Minimum value allowed.
+        - max: Maximum value allowed.
+        - step: The amount by which the value should increase or decrease.
+    -->
+    <input type="number" id="age" name="age" min="18" max="99" step="1">
+    <br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <!-- The <input type="date"> element is used for input fields that should contain a date -->
+    <input type="date" id="dob" name="dob" required>
+    <br><br>
+
+    <label for="gender">Gender:</label>
+    <!-- The <input type="radio"> element is used to create radio buttons -->
+    <!-- Note: Radio buttons with the same name are grouped together -->
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+    <br><br>
+
+    <label for="interests">Interests:</label>
+    <!-- The <input type="checkbox"> element is used to create checkboxes -->
+    <!-- Note: Multiple checkboxes can have the same name if they represent multiple selections -->
+    <input type="checkbox" id="coding" name="interests" value="coding">
+    <label for="coding">Coding</label>
+    <input type="checkbox" id="music" name="interests" value="music">
+    <label for="music">Music</label>
+    <input type="checkbox" id="sports" name="interests" value="sports">
+    <label for="sports">Sports</label>
+    <br><br>
+
+    <label for="country">Country:</label>
+    <!-- The <select> element is used to create a dropdown list -->
+    <!-- Attributes: 
+        - name: The name of the select field.
+        - id: Unique identifier for the select element.
+    -->
+    <select id="country" name="country">
+        <!-- The <option> element defines an option in a select list -->
+        <!-- Attributes: 
+            - value: The value to be sent if this option is selected.
+            - selected: Preselects the option.
+        -->
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="uk">UK</option>
+    </select>
+    <br><br>
+
+    <label for="bio">Bio:</label>
+    <!-- The <textarea> element is used for multi-line text input -->
+    <!-- Attributes: 
+        - rows: Specifies the visible number of lines in the textarea.
+        - cols: Specifies the visible width of the textarea in characters.
+        - maxlength: Maximum length of the input value.
+    -->
+    <textarea id="bio" name="bio" rows="4" cols="50" maxlength="200" placeholder="Tell us about yourself"></textarea>
+    <br><br>
+
+    <label for="profilePic">Profile Picture:</label>
+    <!-- The <input type="file"> element is used for file uploads -->
+    <!-- Attributes: 
+        - accept: Specifies the types of files that the server accepts (e.g., .jpg, .png).
+    -->
+    <input type="file" id="profilePic" name="profilePic" accept=".jpg, .jpeg, .png">
+    <br><br>
+
+    <!-- The <button> element is used to create a clickable button -->
+    <!-- Attributes: 
+        - type: Specifies the type of button (e.g., submit, reset, button).
+    -->
+    <button type="submit">Submit</button>
+    <!-- The <input type="reset"> element creates a reset button -->
+    <input type="reset" value="Reset">
+</form>
+</body>
+
+</html>
+</body>
+</html>
